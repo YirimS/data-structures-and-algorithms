@@ -8,7 +8,13 @@ Write a function called addTwo that takes in an array and adds two to every valu
 
 const addTwo = (arr) => {
   // Solution code here...
+  const array1 = [];
+  arr.forEach(item => {
+    array1.push(item + 2);
+  });
+  return array1;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -18,9 +24,8 @@ Write a function named typeNum that, given an array as input, uses filter to ret
 For example, typeNum([1, 'bob' ,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
-const typeNum = (arr) => {
-  // Solution code here...
-};
+const typeNum = (arr) => arr.filter(item => typeof(item) === 'number');
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -30,9 +35,7 @@ Write a function named containsAnd that, given an array of strings as input, use
 For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 ------------------------------------------------------------------------------------------------ */
 
-const containsAnd = (arr) => {
-  // Solution code here...
-};
+const containsAnd = (arr) => arr.filter(item => item.indexOf('and')!== -1);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -42,9 +45,8 @@ Write a function named oddValues that, given an array of integers as input, uses
 For example, oddValues([1,2,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
-const oddValues = (arr) => {
-  // Solution code here...
-};
+const oddValues = (arr) => arr.filter(item => item % 2 !== 0);
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -54,9 +56,9 @@ Write a function named notInFirstArray that, given two arrays as input, uses fil
 For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
-const notInFirstArray = (forbiddenValues, arr) => {
+const notInFirstArray = (forbiddenValues, arr) => arr.filter(index => !forbiddenValues.includes(index));
   // Solution code here...
-};
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 - Stretch Goal

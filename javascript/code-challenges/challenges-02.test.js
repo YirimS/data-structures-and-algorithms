@@ -100,6 +100,7 @@ For example: charCode(['h','i']) returns [104, 105].
 
 const charCode = (arr) => {
   // Solution code here...
+  const charCode = (arr) => arr.map(letter => letter.charCode)
 };
 
 /* ------------------------------------------------------------------------------------------------
