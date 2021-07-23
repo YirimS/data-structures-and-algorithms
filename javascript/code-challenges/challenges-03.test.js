@@ -99,7 +99,7 @@ const snorlaxData = {
   weight: 4600,
 };
 
-const getBaseStatGreaterThan = (arr, minBaseStat) => {
+const getBaseStatGreaterThan = (arr, minBaseStat) => arr.filter(stat => stat.baseStat > minBaseStat);
   // Solution code here...
 };
 
