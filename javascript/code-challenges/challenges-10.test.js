@@ -28,7 +28,7 @@ return: 23
 const findMax = (matrix) => {
 let arrayNumber = 0;
   matrix.forEach(arr => { 
-    arr.forEach(arrayNumber => {
+    arr2.forEach(arrayNumber => {
       if (arrayNumber > highNumber) {
         highNumber = arrayNumber;
       }
